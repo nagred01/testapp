@@ -2,6 +2,8 @@
 
 package com.testfile1.testbridge;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.view.View;
 
 import com.facebook.react.uimanager.SimpleViewManager;
@@ -11,6 +13,8 @@ import com.facebook.react.uimanager.annotations.ReactProp;
 
 public class TestBridgeManager extends SimpleViewManager<View> {
     public static final String REACT_CLASS = "TestBridge";
+    private ThemedReactContext mContext;
+    private View view;
 
     @Override
     public String getName() {
@@ -23,7 +27,10 @@ public class TestBridgeManager extends SimpleViewManager<View> {
     public View createViewInstance(ThemedReactContext context){
         // Create a view here
         // https://facebook.github.io/react-native/docs/native-components-android.html#2-implement-method-createviewinstance
-        return new View(context);
+        mContext = context;
+        view = new View(context);
+        view.setBackgroundColor(Color.BLUE);
+        return view;
     }
 
     @ReactProp(name = "exampleProp")
