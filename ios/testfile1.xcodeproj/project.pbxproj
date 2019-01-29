@@ -38,6 +38,7 @@
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		723F4BD821FBC7F300522405 /* TestBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 723F4BA721FBC7F200522405 /* TestBridge.m */; };
 		723F4BD921FBC7F300522405 /* TestBridgeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 723F4BD621FBC7F200522405 /* TestBridgeManager.m */; };
+		7268E9F42200DE5A0068F619 /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7268E9F32200DE5A0068F619 /* TestModule.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
@@ -348,6 +349,8 @@
 		723F4BD521FBC7F200522405 /* TestBridgeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBridgeManager.h; sourceTree = "<group>"; };
 		723F4BD621FBC7F200522405 /* TestBridgeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBridgeManager.m; sourceTree = "<group>"; };
 		723F4BD721FBC7F200522405 /* TestBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBridge.h; sourceTree = "<group>"; };
+		7268E9CD2200DE5A0068F619 /* TestModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModule.h; sourceTree = "<group>"; };
+		7268E9F32200DE5A0068F619 /* TestModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
@@ -493,6 +496,8 @@
 		13B07FAE1A68108700A75B9A /* testfile1 */ = {
 			isa = PBXGroup;
 			children = (
+				7268E9CD2200DE5A0068F619 /* TestModule.h */,
+				7268E9F32200DE5A0068F619 /* TestModule.m */,
 				723F4BD721FBC7F200522405 /* TestBridge.h */,
 				723F4BA721FBC7F200522405 /* TestBridge.m */,
 				723F4BD521FBC7F200522405 /* TestBridgeManager.h */,
@@ -1132,6 +1137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				7268E9F42200DE5A0068F619 /* TestModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				723F4BD921FBC7F300522405 /* TestBridgeManager.m in Sources */,
 				723F4BD821FBC7F300522405 /* TestBridge.m in Sources */,
