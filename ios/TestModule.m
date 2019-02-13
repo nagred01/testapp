@@ -41,7 +41,7 @@ RCT_EXPORT_MODULE();
 RCT_EXPORT_METHOD(exampleMethod)
 {
   [self emitMessageToRN:@"EXAMPLE_EVENT" :@{
-                                            @"greeting": @"hi friends!!"
+                                            @"greeting": @"https://www.google.com"
                                             }];
 }
 
